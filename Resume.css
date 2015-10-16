@@ -1,0 +1,21 @@
+div{
+    background-color: blue;
+    color: white;
+/*    padding: 50px;*/
+    font-size: 10px;
+    padding-top: 20px;
+    font: sans-serif;
+/*    padding-bottom: 20px;*/
+    
+}
+
+img {
+    height: 200px;
+    width:  auto;
+    border-color:black;
+    margin: 10px; 
+    padding: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px lightgray;
+
+}

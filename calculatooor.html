@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="calculator.css"></link>
+    <script type="text/javascript">
+    
+        var a, b; 
+        function setValues()
+        {
+            a = document.getElementById("a").value;
+//            b = Number(document.getElementById("b").value); 
+            
+            
+    
+        }
+        
+        
+       function addition()
+        {
+            setValues();
+            result = a + b;
+            alert("YO SUM IS " +result);
+        }
+        function subtraction()
+        {
+            setValues();
+            result = a-b;
+            alert("YO DIFFERENCE IS "+result);
+        }  
+        
+        function multiplication()
+        {
+            setValues();
+            result = a*b;
+            alert("YO PRODUCT IS " +result);
+        }  
+        function division()
+        {
+            setValues();
+            result = a/b;
+            alert("YO QUOTIENT IS " +result);
+        } 
+        
+        function lessWork()
+        {
+            setValues();
+            alert(eval(a));
+            
+        }
+        
+        function calcAdd()
+        {
+            document.getElementById("a").value += "+";
+            document.getElementById("a").focus();
+            
+            
+        }
+      
+         function calcSubtract()
+        {
+            document.getElementById("a").value += "-";
+            document.getElementById("a").focus();
+            
+            
+        }
+         function calcMultiply()
+        {
+            document.getElementById("a").value += "*";
+            document.getElementById("a").focus();
+            
+            
+        }
+         function calcDivide()
+        {
+            document.getElementById("a").value += "/";
+            document.getElementById("a").focus();
+            
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="calculator">
+        <input id="a" type="text"/>
+        <!--input id="b" type="text"/>
+        
+        <!--input id="b" type="text"/>-->
+        <input type="button" onclick="lessWork()" value="="/>
+        <input type="button" onclick="calcAdd()" value="add"/>
+        <input type="button" onclick="calcSubtract()" value="subtract"/>
+        <input type="button" onclick="calcMultiply()" value="multiply"/>
+        <input type="button" onclick="calcDivide()" value="divide"/>
+    </div>
+        
+</body>
+</html>
+                        
