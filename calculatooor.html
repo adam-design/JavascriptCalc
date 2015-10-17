@@ -13,6 +13,7 @@
            document.getElementById("a").value = eval(document.getElementById("a").value)
         }
         
+        
       
          function calcMultiply(button)
         {
@@ -22,16 +23,33 @@
             
         }
         
+        function EnterKeylistener()
+        {
+           //be careful with the parentheses here... they can get confusing
+           // this .addEventListener is fired when any key is pressed (enter in this case)
+            document.getElementById("a").addEventListener('keypress', function (e) {
+                var key = e.which || e.keyCode;
+                if (key === 13) { // 13 is enter
+                    SimpleStuff();
+                }
+            });
+        
+        }
     </script>
 </head>
-<body>
+<body onload="EnterKeylistener()">
     <div id="calculator">
         <input id="a" type="text"/>
-        <input type="button" onclick="SimpleStuff()" value="="/>
-        <input type="button" onclick="calcMultiply(this)" value="+"/>
-        <input type="button" onclick="calcMultiply(this)" value="-"/>
-        <input type="button" onclick="calcMultiply(this)" value="*"/>
-        <input type="button" onclick="calcMultiply(this)" value="/"/>
+        <div class="operator">
+             <input type="button"  onclick="SimpleStuff()" value="="/>
+             <input type="button" onclick="calcMultiply(this)" value="+"/>
+             <input type="button" onclick="calcMultiply(this)" value="-"/>
+             <input type="button" onclick="calcMultiply(this)" value="*"/>
+             <input type="button" onclick="calcMultiply(this)" value="/"/>
+        <div/>
+        
+        <div class="numbers">
+        <input type="button" onclick="calcMultiply(this)" value="0"/>
         <input type="button" onclick="calcMultiply(this)" value="1"/>
         <input type="button" onclick="calcMultiply(this)" value="2"/>
         <input type="button" onclick="calcMultiply(this)" value="3"/>
@@ -41,6 +59,7 @@
         <input type="button" onclick="calcMultiply(this)" value="7"/>
         <input type="button" onclick="calcMultiply(this)" value="8"/>
         <input type="button" onclick="calcMultiply(this)" value="9"/>
+        </div>
     </div>
         
 </body>
