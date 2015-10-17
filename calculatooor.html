@@ -4,24 +4,13 @@
     <link rel="stylesheet" href="calculator.css"></link>
     <script type="text/javascript">
     
-        var a, b; 
-        function setValues()
-        {
-            a = document.getElementById("a").value;
-//            b = Number(document.getElementById("b").value); 
-            
-            
-    
-        }
         
         
      
         
-        function lessWork()
+        function SimpleStuff()
         {
-            setValues();
-            alert(eval(a));
-            
+           document.getElementById("a").value = eval(document.getElementById("a").value)
         }
         
       
@@ -38,10 +27,7 @@
 <body>
     <div id="calculator">
         <input id="a" type="text"/>
-        <!--input id="b" type="text"/>
-        
-        <!--input id="b" type="text"/>-->
-        <input type="button" onclick="lessWork()" value="="/>
+        <input type="button" onclick="SimpleStuff()" value="="/>
         <input type="button" onclick="calcMultiply(this)" value="+"/>
         <input type="button" onclick="calcMultiply(this)" value="-"/>
         <input type="button" onclick="calcMultiply(this)" value="*"/>
