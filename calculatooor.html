@@ -10,14 +10,14 @@
         
         function SimpleStuff()
         {
-           document.getElementById("a").value = eval(document.getElementById("a").value)
+           document.getElementById("a").innerHTML = eval(document.getElementById("a").value)
         }
         
         
       
          function calcMultiply(button)
         {
-            document.getElementById("a").value += button.value;
+            document.getElementById("a").innerHTML += button.value;
             document.getElementById("a").focus();
             
             
@@ -41,24 +41,24 @@
     <div id="calculator">
         <input id="a" type="text"/>
         <div class="operator">
-             <input type="button"  onclick="SimpleStuff()" value="="/>
-             <input type="button" onclick="calcMultiply(this)" value="+"/>
-             <input type="button" onclick="calcMultiply(this)" value="-"/>
-             <input type="button" onclick="calcMultiply(this)" value="*"/>
-             <input type="button" onclick="calcMultiply(this)" value="/"/>
+             <div type="button"  onclick="SimpleStuff()" value="="/>
+             <div type="button" onclick="calcMultiply(this)" value="+"/>
+             <div type="button" onclick="calcMultiply(this)" value="-"/>
+             <div type="button" onclick="calcMultiply(this)" value="*"/>
+             <div type="button" onclick="calcMultiply(this)" value="/"/>
         <div/>
         
         <div class="numbers">
-        <input type="button" onclick="calcMultiply(this)" value="0"/>
-        <input type="button" onclick="calcMultiply(this)" value="1"/>
-        <input type="button" onclick="calcMultiply(this)" value="2"/>
-        <input type="button" onclick="calcMultiply(this)" value="3"/>
-        <input type="button" onclick="calcMultiply(this)" value="4"/>
-        <input type="button" onclick="calcMultiply(this)" value="5"/>
-        <input type="button" onclick="calcMultiply(this)" value="6"/>
-        <input type="button" onclick="calcMultiply(this)" value="7"/>
-        <input type="button" onclick="calcMultiply(this)" value="8"/>
-        <input type="button" onclick="calcMultiply(this)" value="9"/>
+        <div type="button" onclick="calcMultiply(this)" value="0"/>
+        <div type="button" onclick="calcMultiply(this)" value="1"/>
+        <div type="button" onclick="calcMultiply(this)" value="2"/>
+        <div type="button" onclick="calcMultiply(this)" value="3"/>
+        <div type="button" onclick="calcMultiply(this)" value="4"/>
+        <div type="button" onclick="calcMultiply(this)" value="5"/>
+        <div type="button" onclick="calcMultiply(this)" value="6"/>
+        <div type="button" onclick="calcMultiply(this)" value="7"/>
+        <div type="button" onclick="calcMultiply(this)" value="8"/>
+        <div type="button" onclick="calcMultiply(this)" value="9"/>
         </div>
     </div>
         
