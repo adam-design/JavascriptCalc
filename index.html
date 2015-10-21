@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="calculator.css"></link>
+    <script type="text/javascript">
+    
+        
+        
+     
+        
+        function SimpleStuff()
+        {
+           document.getElementById("a").value = eval(document.getElementById("a").value)
+        }
+        
+        
+      
+         function calcMultiply(button)
+        {
+            
+            document.getElementById("a").value += button.innerHTML;
+            document.getElementById("a").focus();
+            
+            
+        }
+        
+        function EnterKeylistener()
+        {
+           //be careful with the parentheses here... they can get confusing
+           // this .addEventListener is fired when any key is pressed (enter in this case)
+            document.getElementById("a").addEventListener('keypress', function (e) {
+                var key = e.which || e.keyCode;
+                if (key === 13) { // 13 is enter
+                    SimpleStuff();
+                }
+            });
+        
+        }
+    </script>
+</head>
+<body onload="EnterKeylistener()">
+    <div id="calculatorBox" class="positioning">
+        <input id="a" type="text"/>
+        <div class="operatorButtons">
+            <div class="button" onclick="SimpleStuff()">=</div>
+            <div class="button" onclick="calcMultiply(this)" >+</div>
+            <div class="button" onclick="calcMultiply(this)" >-</div>
+            <div class="button" onclick="calcMultiply(this)" >*</div>
+            <div class="button" onclick="calcMultiply(this)" >/</div>
+            <div class="button" onclick="calcMultiply(this)" >.</div>
+
+            
+        <div/> 
+        <div class="numberButtons">
+        <div class="button" onclick="calcMultiply(this)" >0</div>
+        <div class="button" onclick="calcMultiply(this)" >1</div>
+        <div class="button" onclick="calcMultiply(this)" >2</div>
+        <div class="button" onclick="calcMultiply(this)" >3</div>
+        <div class="button" onclick="calcMultiply(this)" >4</div>
+        <div class="button" onclick="calcMultiply(this)" >5</div>
+        <div class="button" onclick="calcMultiply(this)" >6</div>
+        <div class="button" onclick="calcMultiply(this)" >7</div>
+        <div class="button" onclick="calcMultiply(this)" >8</div>
+        <div class="button" onclick="calcMultiply(this)" >9</div>
+    
+        
+    
+    </div>
+</div>
+    </div>        
+</body>
+</html>
+                        
