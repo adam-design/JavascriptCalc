@@ -5,13 +5,19 @@ html {
 	background-size: cover;
 }
 
+div{
+    width:25px;
+}
 
 #calculatorBox{
     width:500px;
-    height: 600px;
+    margin:10%;
     background-color:lightgreen;
-    margin-left: 50px;
-    margin-right: auto;
-   
+    
+   }
+#a {
+    float:center;
+ 
     
 }
+    
