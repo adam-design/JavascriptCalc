@@ -7,17 +7,19 @@ html {
 
 div{
     width:25px;
+    height:25px;
+    text-align:center;
+    background-color:coral;
 }
 
 #calculatorBox{
-    width:500px;
-    margin:10%;
-    background-color:lightgreen;
-    
-   }
-#a {
-    float:center;
- 
-    
+    width:75%;
+    margin-left: 10%;
+    height:500px;
 }
+
+
+
+
+
     
