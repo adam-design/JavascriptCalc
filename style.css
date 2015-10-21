@@ -6,4 +6,12 @@ html {
 }
 
 
+#calculatorBox{
+    width:500px;
+    height: 600px;
+    background-color:lightgreen;
+    margin-left: 50px;
+    margin-right: auto;
+   
+    
 }
