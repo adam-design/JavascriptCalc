@@ -10,3 +10,5 @@ So far I've experimented with:
 - added a keypress event with .addEventListener and connected it to the "enter" key
 - within a function use myFunction(this) to target "this" 
 - To be Continued...
+
+![alt tag](http://i.imgur.com/srYEcYk.png/to/srYEcYk.png)
