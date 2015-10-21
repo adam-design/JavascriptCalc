@@ -1,6 +1,6 @@
 #a {
     border: 1px solid red;
-        border-radius: 15px;
+    border-radius: 15px;
     width: auto;
 
     background-color: antiquewhite;
@@ -18,3 +18,28 @@
 .operator {
 padding: 20px;
 }
+
+.positioning {
+   
+    
+}
+
+div.test{
+    display:inline-block;
+    border-radius: 10px;
+    border: 2px solid red;
+    width:auto;
+    
+}
+
+div.numbers{
+    border-radius: 10px;
+    border: 2px solid red;
+    
+    top:0;
+    width:66px;
+    height:36px;
+    position:relative;
+    display:inline;
+}
+    
