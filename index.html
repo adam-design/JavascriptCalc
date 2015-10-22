@@ -17,11 +17,20 @@
       
          function calcMultiply(button)
         {
-            
+           
             document.getElementById("a").value += button.innerHTML;
             document.getElementById("a").focus();
             
             
+        }
+        
+        function mathFloors()
+        {
+            
+            var operation = document.getElementById("a");
+            var text = document.createTextNode("math."); 
+            document.getElementById("a").value += text.innerHTML;
+            alert("success")
         }
         
         function EnterKeylistener()
@@ -49,6 +58,11 @@
                 <div class="button" onclick="calcMultiply(this)" >*</div>
                 <div class="button" onclick="calcMultiply(this)" >/</div>
                 <div class="button" onclick="calcMultiply(this)" >.</div>
+                <div class="button" onclick="calcMultiply(this)">(</div>
+                <div class="button" onclick="calcMultiply(this)">)</div>
+                <div class="button" onclick="mathFloors()">log</div>
+                <div class="button" onclick="mathFloors()" >floor</div>
+                
             </div>
 
             
