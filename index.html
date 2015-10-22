@@ -13,7 +13,20 @@
            document.getElementById("a").value = eval(document.getElementById("a").value)
         }
         
+        function mathLog()
+        {
+            
+            var operation = Math.log;
+            document.getElementById("a").value = eval(Math.log(document.getElementById("a").value));
+        }
         
+        function mathFloor()
+        {
+            var operation = Math.floor;
+            document.getElementById("a").value = eval(Math.floor(document.getElementById("a").value));
+
+            
+        }
       
          function calcMultiply(button)
         {
@@ -24,14 +37,7 @@
             
         }
         
-        function mathFloors()
-        {
-            
-            var operation = document.getElementById("a");
-            var text = document.createTextNode("math."); 
-            document.getElementById("a").value += text.innerHTML;
-            alert("success")
-        }
+      
         
         function EnterKeylistener()
         {
@@ -60,8 +66,8 @@
                 <div class="button" onclick="calcMultiply(this)" >.</div>
                 <div class="button" onclick="calcMultiply(this)">(</div>
                 <div class="button" onclick="calcMultiply(this)">)</div>
-                <div class="button" onclick="mathFloors()">log</div>
-                <div class="button" onclick="mathFloors()" >floor</div>
+                <div class="button" onclick="mathLog()">log</div>
+                <div class="button" onclick="mathFloor()" >floor</div>
                 
             </div>
 
