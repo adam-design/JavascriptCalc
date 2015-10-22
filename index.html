@@ -39,15 +39,17 @@
     </script>
 </head>
 <body onload="EnterKeylistener()">
-    <div id="calculatorBox" class="positioning">
+    <div id="bigBox" >
         <input id="a" type="text"/>
         <div class="operatorButtons">
-            <div class="button" onclick="SimpleStuff()">=</div>
-            <div class="button" onclick="calcMultiply(this)" >+</div>
-            <div class="button" onclick="calcMultiply(this)" >-</div>
-            <div class="button" onclick="calcMultiply(this)" >*</div>
-            <div class="button" onclick="calcMultiply(this)" >/</div>
-            <div class="button" onclick="calcMultiply(this)" >.</div>
+            <div id="row1">
+                <div class="button" onclick="SimpleStuff()">=</div>
+                <div class="button" onclick="calcMultiply(this)" >+</div>
+                <div class="button" onclick="calcMultiply(this)" >-</div>
+                <div class="button" onclick="calcMultiply(this)" >*</div>
+                <div class="button" onclick="calcMultiply(this)" >/</div>
+                <div class="button" onclick="calcMultiply(this)" >.</div>
+            </div>
 
             
         <div/> 
