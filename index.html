@@ -3,9 +3,24 @@
 <head>
     <link rel="stylesheet" href="style.css"></link>
     <script type="text/javascript">
+        
+        function EnterKeylistener(){
+           //be careful with the parentheses here... they can get confusing
+           // this .addEventListener is fired when any key is pressed (enter in this case)
+            document.getElementById("a").addEventListener('keypress', function (e) {
+                var key = e.which || e.keyCode;
+                if (key === 13) { // 13 is enter
+                    SimpleStuff();
+                }
+            });
+        
+        }
     
         
+       
         
+
+
      
         
         function SimpleStuff()
@@ -27,38 +42,34 @@
 
             
         }
+        
+
       
          function calcMultiply(button)
         {
-           
+             operationBoolation(){
+              boolean user = true;
+
+        if ( user == true) {
+        System.out.println("it's true");
+        }
+        else {
+        System.out.println("it's false");
+        }
+        }
+        }}
+//            Adds the operator/number value to the textbox when paired with onClick
             document.getElementById("a").value += button.innerHTML;
+            
+//            Refocuses to textbox after click 
             document.getElementById("a").focus();
             
             
-        }
         
-        try {
-            var operation = Math.floor;
-            document.getElementById("a").value = eval(Math.floor(document.getElementById("a").value));
-            }
-        
-        catch() {
-    alert("are you ok");
-                    }
+       
       
         
-        function EnterKeylistener()
-        {
-           //be careful with the parentheses here... they can get confusing
-           // this .addEventListener is fired when any key is pressed (enter in this case)
-            document.getElementById("a").addEventListener('keypress', function (e) {
-                var key = e.which || e.keyCode;
-                if (key === 13) { // 13 is enter
-                    SimpleStuff();
-                }
-            });
         
-        }
     </script>
 </head>
 <body onload="EnterKeylistener()">
