@@ -16,6 +16,10 @@ function buttonPressed(button) {
         document.getElementById("a").focus();
     }
 
+    if (lastPressedOperator == true) {
+        alert("Error: There has to be a number between operators")
+    }
+
     // When an operator is pressed it cannot be pressed again because of the boolean
     if (isOperator == true) {
         console.log("0");
