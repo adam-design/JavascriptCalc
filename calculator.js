@@ -5,16 +5,17 @@ function calcMultiply(button) {
             document.getElementById("a").focus();
             
            /* states that if an operator button is pressed set push to true*/
-           /*var push = false;
+           var push = false;
            if ($(this).has(".operatorButtons") == true){
                var push = true
                document.getElementById("a").value += button.innerHTML;
-               document.getElementById("a").focus();}
+               document.getElementById("a").focus();
+           }
 //            Adds the operator/number value to the textbox when paired with onClick
-            Refocuses to textbox after click 
+//            Refocuses to textbox after click 
             
        else
-                var push = false; */
+                var push = false; 
 }
         
         
@@ -22,7 +23,8 @@ function calcMultiply(button) {
 
         
     
-        function EnterKeylistener(){
+window.onload = EnterKeylistener;       
+function EnterKeylistener(){
            //be careful with the parentheses here... they can get confusing
            // this .addEventListener is fired when any key is pressed (enter in this case)
             document.getElementById("a").addEventListener("keypress", function (e) {
