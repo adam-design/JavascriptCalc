@@ -1,8 +1,9 @@
-
- function calcMultiply(button){
-            console.log("click click");
+function calcMultiply(button) {
+            
+    
             document.getElementById("a").value += button.innerHTML;
-            document.getElementById("a").focus()
+            document.getElementById("a").focus();
+            
            /* states that if an operator button is pressed set push to true*/
            /*var push = false;
            if ($(this).has(".operatorButtons") == true){
@@ -14,14 +15,14 @@
             
        else
                 var push = false; */
-    }
+}
         
         
        
 
         
     
-        /*function EnterKeylistener(){
+       /* function EnterKeylistener(){
            //be careful with the parentheses here... they can get confusing
            // this .addEventListener is fired when any key is pressed (enter in this case)
             document.getElementById("a").addEventListener("keypress", function (e)) {
@@ -32,9 +33,8 @@
             };
         
         }*/
-        function SimpleStuff()
-        {
-           document.getElementById("a").value = eval(document.getElementById("a").value)
+        function SimpleStuff(){
+           document.getElementById("a").value = eval(document.getElementById("a").value);
         }
         
         function mathLog()
