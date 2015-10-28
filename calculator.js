@@ -22,17 +22,17 @@ function calcMultiply(button) {
 
         
     
-       /* function EnterKeylistener(){
+        function EnterKeylistener(){
            //be careful with the parentheses here... they can get confusing
            // this .addEventListener is fired when any key is pressed (enter in this case)
-            document.getElementById("a").addEventListener("keypress", function (e)) {
+            document.getElementById("a").addEventListener("keypress", function (e) {
                 var key = e.which || e.keyCode;
                 if (key === 13) { // 13 is enter
                     SimpleStuff();
                 }
-            };
+            });
         
-        }*/
+        }
         function SimpleStuff(){
            document.getElementById("a").value = eval(document.getElementById("a").value);
         }
