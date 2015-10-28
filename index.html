@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css"></link>
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="calculator.js" ></script>
-   
+    <script type="text/javascript" src="calculator.js"></script>
+
 </head>
+
 <body>
-    <div id="bigBox" >
-        <input id="a" type="text"/>
+    <div id="bigBox">
+        <input id="a" type="text" />
+
         <div class="operatorButtons">
             <div id="row1">
                 <div class="button" onclick="SimpleStuff()">=</div>
-                <div class="button" onclick="calcMultiply(this)" >+</div>
-                <div class="button" onclick="calcMultiply(this)" >-</div>
-                <div class="button" onclick="calcMultiply(this)" >*</div>
-                <div class="button" onclick="calcMultiply(this)" >/</div>
-                <div class="button" onclick="calcMultiply(this)" >.</div>
-                <div class="button" onclick="calcMultiply(this)">(</div>
-                <div class="button" onclick="calcMultiply(this)">)</div>
-                <div class="button" onclick="mathLog()">log</div>
-                <div class="button" onclick="mathFloor()" >floor</div>
-                
+                <div class="button op" onclick="buttonPressed(this)">+</div>
+                <div class="button op" onclick="buttonPressed(this)">-</div>
+                <div class="button op" onclick="buttonPressed(this)">*</div>
+                <div class="button op" onclick="buttonPressed(this)">/</div>
+                <div class="button op" onclick="buttonPressed(this)">.</div>
+                <div class="button op" onclick="buttonPressed(this)">(</div>
+                <div class="button op" onclick="buttonPressed(this)">)</div>
+                <div class="button op" onclick="mathLog()">log</div>
+                <div class="button op" onclick="mathFloor()">floor</div>
+
             </div>
 
-            
-        <div/> 
-        <div class="numberButtons">
-        <div class="button" onclick="calcMultiply(this)" >0</div>
-        <div class="button" onclick="calcMultiply(this)" >1</div>
-        <div class="button" onclick="calcMultiply(this)" >2</div>
-        <div class="button" onclick="calcMultiply(this)" >3</div>
-        <div class="button" onclick="calcMultiply(this)" >4</div>
-        <div class="button" onclick="calcMultiply(this)" >5</div>
-        <div class="button" onclick="calcMultiply(this)" >6</div>
-        <div class="button" onclick="calcMultiply(this)" >7</div>
-        <div class="button" onclick="calcMultiply(this)" >8</div>
-        <div class="button" onclick="calcMultiply(this)" >9</div>
-    
-        
-    
+
+            <div/>
+            <div class="numberButtons">
+                <div class="button" onclick="buttonPressed(this)">0</div>
+                <div class="button" onclick="buttonPressed(this)">1</div>
+                <div class="button" onclick="buttonPressed(this)">2</div>
+                <div class="button" onclick="buttonPressed(this)">3</div>
+                <div class="button" onclick="buttonPressed(this)">4</div>
+                <div class="button" onclick="buttonPressed(this)">5</div>
+                <div class="button" onclick="buttonPressed(this)">6</div>
+                <div class="button" onclick="buttonPressed(this)">7</div>
+                <div class="button" onclick="buttonPressed(this)">8</div>
+                <div class="button" onclick="buttonPressed(this)">9</div>
+
+
+
+            </div>
+        </div>
     </div>
-</div>
-    </div>        
 </body>
+
 </html>
-                        
