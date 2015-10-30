@@ -1,5 +1,9 @@
 var lastPressedOperator = false;
 
+function clearTextbox() {
+    document.getElementById("a").value = "";
+}
+
 function buttonPressed(button) {
 
     // isOperator is true when the button has class op (is an operator)
@@ -17,7 +21,7 @@ function buttonPressed(button) {
     }
 
     if (lastPressedOperator == true) {
-        alert("Error: There has to be a number between operators")
+        alert("Error: There has to be a number between operators");
     }
 
     // When an operator is pressed it cannot be pressed again because of the boolean
