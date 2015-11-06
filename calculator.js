@@ -38,6 +38,23 @@ function buttonPressed(button) {
 
 
 
+function zeroDivision(button) {
+    var isZero = $(button).hasClass("zero");
+    var divideBy = $(button).hasClass("division");
+
+    if (divideBy == true) {
+        isZero = true;
+    }
+    if (isZero == true && divideBy == true) {
+        console.log("0");
+        alert("You can't divide by zero silly");
+    }
+}
+
+
+
+
+
 
 
 
