@@ -13,7 +13,12 @@ html {
 #bigBox {
     padding: 25px;
     width: 95%;
-    height: 600px;
+    /* setting the constraints for mobile-first responsiveness */
+    max-width: 650px;
+    min-width: 350px;
+    min-height: 600px;
+    height: 800px;
+    display: inline-block;
     border-color: gainsboro;
     webkit-border-radius: 50px;
     -khtml-border-radius: 50px;
@@ -59,7 +64,7 @@ html {
 
 /* Tablet Landscape */
 
-@media screen and (max-width: 1060px) {
+@media screen and (min-width: 1060px) {
     #primary {
         width: 67%;
     }
@@ -72,10 +77,11 @@ html {
 
 /* Tabled Portrait */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     #primary {
         width: 100%;
     }
+    #bigBox {}
     #secondary {
         width: 100%;
         margin: 0;

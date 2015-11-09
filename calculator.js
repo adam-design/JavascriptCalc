@@ -42,49 +42,44 @@ function zeroDivision(button) {
     var isZero = $(button).hasClass("zero");
     var divideBy = $(button).hasClass("division");
 
-    if (divideBy == true) {
-        isZero = true;
+    if (document.getElementById("a").value = "/0") {
+        alert("can't divide by zero");
     }
-    if (isZero == true && divideBy == true) {
-        console.log("0");
-        alert("You can't divide by zero silly");
+
+
+
+
+
+
+
+
+    window.onload = EnterKeylistener;
+
+    function EnterKeylistener() {
+        //be careful with the parentheses here... they can get confusing
+        // this .addEventListener is fired when any key is pressed (enter in this case)
+        document.getElementById("a").addEventListener("keypress", function (e) {
+            var key = e.which || e.keyCode;
+            if (key === 13) { // 13 is enter
+                SimpleStuff();
+            }
+        });
+
     }
-}
+
+    function SimpleStuff() {
+        document.getElementById("a").value = eval(document.getElementById("a").value);
+    }
+
+    function mathLog() {
+
+        var operation = Math.log;
+        document.getElementById("a").value = eval(Math.log(document.getElementById("a").value));
+    }
+
+    function mathFloor() {
+        var operation = Math.floor;
+        document.getElementById("a").value = eval(Math.floor(document.getElementById("a").value));
 
 
-
-
-
-
-
-
-window.onload = EnterKeylistener;
-
-function EnterKeylistener() {
-    //be careful with the parentheses here... they can get confusing
-    // this .addEventListener is fired when any key is pressed (enter in this case)
-    document.getElementById("a").addEventListener("keypress", function (e) {
-        var key = e.which || e.keyCode;
-        if (key === 13) { // 13 is enter
-            SimpleStuff();
-        }
-    });
-
-}
-
-function SimpleStuff() {
-    document.getElementById("a").value = eval(document.getElementById("a").value);
-}
-
-function mathLog() {
-
-    var operation = Math.log;
-    document.getElementById("a").value = eval(Math.log(document.getElementById("a").value));
-}
-
-function mathFloor() {
-    var operation = Math.floor;
-    document.getElementById("a").value = eval(Math.floor(document.getElementById("a").value));
-
-
-}
+    }
