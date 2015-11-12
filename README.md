@@ -1,24 +1,30 @@
 # JavascriptCalc
-Playing with Calculator in JS
 
-The goal of this project is to create a functioning calculator in Javascript, HTML, and CSS all from scratch.
+Check it out on my website: adam-design.com/JavascriptCalc
 
-Specific focus of the project (working with javascript mostly)
-- .getElementById
+Inspiration
+
+The goal of this project was to create a functioning calculator in Javascript, HTML, and CSS all from scratch.
+
+Highlights:
+- .getElementById 
 - onload="" , onclick=""
 - setting a function and calling it with myFunction()
 - added a keypress event with .addEventListener and connected it to the "enter" key
 - within a function use myFunction(this) to target "this" 
 - Setting functions to alert uses to errors caused by consecutive key presses
+- properly linking jQuery within the html documents and keeping an eye on the syntax as bugs come up
+- using different methods to solve the same problem such as resetting an entire input box vs setting the value to "" onclick
+- playing with color schemes and user experience with buttons and how the interact 
+    (at one point the press of a button on the third column would push the buttons to its left down)
 
 11/10/15
-UPDATE: Project is finished for now. Will be revamped later after building a freelance website.
+UPDATE: Project is finished for now. Will be revamped later after finishing  SimpleDesign
 
 Cheers,
 
 Adam
 
-UPDATED Version
-![alt tag](http://i.imgur.com/MEHh1r5.png)
-OLD Version
-![alt tag](http://i.imgur.com/srYEcYk.png/to/srYEcYk.png)
+Finished product
+![alt tag](http://i.imgur.com/tQIjw1b.png)
+
