@@ -4,6 +4,11 @@ html {
     background-size: cover;
 }
 
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
 @font-face {
     font-family: "Calculator";
     src: url('http://www.dafont.com/calculator.font'), url('http://www.dafont.com/calculator.font');
@@ -50,6 +55,8 @@ html {
     margin: 10px 7px 7px 5px;
     line-height: 36px;
     margin-top: 5px;
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
 .button:active {
