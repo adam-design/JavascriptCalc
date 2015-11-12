@@ -1,10 +1,15 @@
 # JavascriptCalc
 
-Check it out on my website: adam-design.com/JavascriptCalc
+Check it out on my website: [adam-design.com/JavascriptCalc](http://adam-design.com/JavascriptCalc)
 
-Inspiration
+### Inspiration
 
 The goal of this project was to create a functioning calculator in Javascript, HTML, and CSS all from scratch.
+
+
+
+### UPDATE 11/12/15:
+Project is finished for now. Will be revamped later after finishing  SimpleDesign
 
 Highlights:
 - .getElementById 
@@ -17,9 +22,6 @@ Highlights:
 - using different methods to solve the same problem such as resetting an entire input box vs setting the value to "" onclick
 - playing with color schemes and user experience with buttons and how the interact 
     (at one point the press of a button on the third column would push the buttons to its left down)
-
-11/10/15
-UPDATE: Project is finished for now. Will be revamped later after finishing  SimpleDesign
 
 Cheers,
 
