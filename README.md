@@ -6,12 +6,14 @@ Check it out on my website: [adam-design.com/JavascriptCalc](http://adam-design.
 
 The goal of this project was to create a functioning calculator in Javascript, HTML, and CSS all from scratch.
 
-
-
 ### UPDATE 11/12/15:
 Project is finished for now. Will be revamped later after finishing  SimpleDesign
 
-Highlights:
+Finished product
+![alt tag](http://i.imgur.com/tQIjw1b.png)
+
+
+###Highlights:
 - .getElementById 
 - onload="" , onclick=""
 - setting a function and calling it with myFunction()
@@ -27,6 +29,4 @@ Cheers,
 
 Adam
 
-Finished product
-![alt tag](http://i.imgur.com/tQIjw1b.png)
 
