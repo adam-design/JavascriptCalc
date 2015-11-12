@@ -56,13 +56,18 @@ html {
     top: 4px;
 }
 
+input {
+    padding-left: 10px;
+}
+
 #a {
     font-size: 25px;
     display: block;
     width: 50%;
     height: 100px;
     width: 280px;
-    margin: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     webkit-border-radius: 50px;
     -khtml-border-radius: 50px;
     -moz-border-radius: 50px;
