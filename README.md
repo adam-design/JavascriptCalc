@@ -1,6 +1,6 @@
 # JavascriptCalc
 
-Check it out on my website: [adam-design.com/JavascriptCalc](http://adam-design.com/JavascriptCalc)
+Check it out on my website: [http://adam-design.github.io/JavascriptCalc/](http://adam-design.github.io/JavascriptCalc/)
 
 ### Inspiration
 
@@ -13,7 +13,7 @@ Finished product
 ![alt tag](http://i.imgur.com/tQIjw1b.png)
 
 
-###Highlights:
+### Highlights:
 - .getElementById 
 - onload="" , onclick=""
 - setting a function and calling it with myFunction()
